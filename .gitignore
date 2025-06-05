@@ -1,0 +1,23 @@
+# Node.js
+node_modules
+.env
+.env.local
+
+# Build
+dist
+.vite
+
+# macOS
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vercel (якщо деплоїш)
+.vercel
+
+# Optional: IDE stuff
+.idea
+.vscode
