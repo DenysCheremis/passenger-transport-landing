@@ -30,7 +30,7 @@ function ContactForm() {
 					<FaWhatsapp size={24} /> WhatsApp
 				</a>
 				<a
-					href="https://t.me/yourtelegramusername"
+					href="https://t.me/Konfort_TRANSS"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="flex items-center justify-center gap-2 px-6 py-4 bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg text-lg"

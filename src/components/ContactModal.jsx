@@ -65,7 +65,7 @@ function ContactModal({ isOpen, onClose }) {
 						<FaWhatsapp size={20} /> WhatsApp
 					</a>
 					<a
-						href="https://t.me/yourtelegramusername"
+						href="https://t.me/Konfort_TRANSS"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="flex items-center justify-center gap-2 px-6 py-3 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600"

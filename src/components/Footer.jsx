@@ -1,6 +1,12 @@
 import React from 'react';
 import { FiPhone, FiMail } from 'react-icons/fi';
-import { FaTelegramPlane, FaWhatsapp, FaFacebookMessenger, FaViber } from 'react-icons/fa';
+import {
+	FaTelegramPlane,
+	FaWhatsapp,
+	FaFacebookMessenger,
+	FaViber,
+	FaInstagram,
+} from 'react-icons/fa';
 
 function Footer() {
 	return (
@@ -45,13 +51,22 @@ function Footer() {
 						<FaWhatsapp />
 					</a>
 					<a
-						href="https://t.me/yourtelegramusername"
+						href="https://t.me/Konfort_TRANSS"
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="Telegram"
 						className="text-[#0088cc]"
 					>
 						<FaTelegramPlane />
+					</a>
+					<a
+						href="https://www.instagram.com/konfort_transs/profilecard/?igsh=MTVlOXZ1MWlhNnF3NA=="
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="Instagram"
+						className="text-[#E4405F]"
+					>
+						<FaInstagram />
 					</a>
 					{/* <a
 						href="https://m.me/yourfacebookusername"
