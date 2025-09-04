@@ -1,12 +1,12 @@
-import React from 'react';
-import { FiPhone, FiMail } from 'react-icons/fi';
+import React from "react";
+import { FiPhone, FiMail } from "react-icons/fi";
 import {
 	FaTelegramPlane,
 	FaWhatsapp,
 	FaFacebookMessenger,
 	FaViber,
 	FaInstagram,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
 function Footer() {
 	return (
@@ -17,7 +17,7 @@ function Footer() {
 						<FiPhone />
 						<a href="tel:+380688013941" className="hover:underline">
 							+380688013941
-						</a>{' '}
+						</a>{" "}
 						/
 						<a href="tel:+380930359224" className="hover:underline">
 							+380930359224
@@ -25,7 +25,10 @@ function Footer() {
 					</div>
 					<div className="flex items-center gap-2 justify-center md:justify-start mt-1">
 						<FiMail />
-						<a href="mailto:comforttrans999@gmail.com" className="hover:underline">
+						<a
+							href="mailto:comforttrans999@gmail.com"
+							className="hover:underline"
+						>
 							comforttrans999@gmail.com
 						</a>
 					</div>

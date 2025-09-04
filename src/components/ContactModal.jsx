@@ -1,7 +1,11 @@
-import React, { useEffect, useRef } from 'react';
-import { FaTelegramPlane, FaWhatsapp, FaFacebookMessenger } from 'react-icons/fa';
-import { FiPhone } from 'react-icons/fi';
-import { SiViber } from 'react-icons/si'; // Іконка Viber
+import React, { useEffect, useRef } from "react";
+import {
+	FaTelegramPlane,
+	FaWhatsapp,
+	FaFacebookMessenger,
+} from "react-icons/fa";
+import { FiPhone } from "react-icons/fi";
+import { SiViber } from "react-icons/si"; // Іконка Viber
 
 function ContactModal({ isOpen, onClose }) {
 	const modalRef = useRef();
@@ -9,11 +13,11 @@ function ContactModal({ isOpen, onClose }) {
 	// Заборонити скрол при відкритій модалці
 	useEffect(() => {
 		if (isOpen) {
-			document.body.style.overflow = 'hidden';
+			document.body.style.overflow = "hidden";
 		} else {
-			document.body.style.overflow = 'auto';
+			document.body.style.overflow = "auto";
 		}
-		return () => (document.body.style.overflow = 'auto');
+		return () => (document.body.style.overflow = "auto");
 	}, [isOpen]);
 
 	// Закрити по кліку за межами модалки
@@ -40,7 +44,9 @@ function ContactModal({ isOpen, onClose }) {
 				>
 					&times;
 				</button>
-				<h2 className="text-xl font-semibold mb-4 text-center">Звʼязатися з нами</h2>
+				<h2 className="text-xl font-semibold mb-4 text-center">
+					Звʼязатися з нами
+				</h2>
 				<div className="grid gap-4 text-center">
 					<a
 						href="tel:+380688013941"

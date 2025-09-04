@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import heroImage from '../assets/hero.jpg';
-import ContactModal from '../components/ContactModal';
+import React, { useState } from "react";
+import heroImage from "../assets/hero.jpg";
+import ContactModal from "../components/ContactModal";
 
 function Hero() {
 	const [isModalOpen, setIsModalOpen] = useState(false);
@@ -11,7 +11,9 @@ function Hero() {
 			style={{ backgroundImage: `url(${heroImage})` }}
 		>
 			<div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-4">
-				<h1 className="text-4xl md:text-6xl font-bold">Пасажирські перевезення</h1>
+				<h1 className="text-4xl md:text-6xl font-bold">
+					Пасажирські перевезення
+				</h1>
 				<p className="text-xl mt-4">Міжнародні перевезення з України</p>
 				<button
 					onClick={() => setIsModalOpen(true)}
@@ -20,7 +22,10 @@ function Hero() {
 					Забронювати поїздку
 				</button>
 			</div>
-			<ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+			<ContactModal
+				isOpen={isModalOpen}
+				onClose={() => setIsModalOpen(false)}
+			/>
 		</div>
 	);
 }

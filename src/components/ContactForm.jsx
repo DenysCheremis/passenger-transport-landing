@@ -1,11 +1,18 @@
-import React from 'react';
-import { FaTelegramPlane, FaWhatsapp, FaFacebookMessenger, FaViber } from 'react-icons/fa';
-import { FiPhone } from 'react-icons/fi';
+import React from "react";
+import {
+	FaTelegramPlane,
+	FaWhatsapp,
+	FaFacebookMessenger,
+	FaViber,
+} from "react-icons/fa";
+import { FiPhone } from "react-icons/fi";
 
 function ContactForm() {
 	return (
 		<section className="py-16 px-6 bg-gray-50">
-			<h2 className="text-3xl font-semibold text-center mb-12">Звʼязатися з нами</h2>
+			<h2 className="text-3xl font-semibold text-center mb-12">
+				Звʼязатися з нами
+			</h2>
 			<div className="max-w-2xl mx-auto grid gap-6 text-center sm:grid-cols-2">
 				<a
 					href="tel:+380688013941"

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function Services() {
 	return (
@@ -11,7 +11,10 @@ function Services() {
 				</div>
 				<div className="p-6 shadow-md rounded-lg bg-white">
 					<h3 className="text-xl font-bold mb-2">Міжнародні перевезення</h3>
-					<p>Поїздки з України до Польщі, Чехії, Німеччини, Словаччини та інших країн.</p>
+					<p>
+						Поїздки з України до Польщі, Чехії, Німеччини, Словаччини та інших
+						країн.
+					</p>
 				</div>
 			</div>
 		</section>
