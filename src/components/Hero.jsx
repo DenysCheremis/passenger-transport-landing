@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import heroImage from "../assets/hero.jpg";
+import heroImage from "../assets/hero2.jpg";
 import ContactModal from "../components/ContactModal";
 
 function Hero() {
@@ -14,7 +14,7 @@ function Hero() {
 				<h1 className="text-4xl md:text-6xl font-bold">
 					Пасажирські перевезення
 				</h1>
-				<p className="text-xl mt-4">Міжнародні перевезення з України</p>
+				<p className="text-xl mt-4">Трансферні перевезення Україна - Європа</p>
 				<button
 					onClick={() => setIsModalOpen(true)}
 					className="mt-6 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg"
