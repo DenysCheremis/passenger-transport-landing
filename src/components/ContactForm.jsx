@@ -6,6 +6,7 @@ import {
 	FaViber,
 } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
+import { trackContactClick } from "../utils/gtag";
 
 function ContactForm() {
 	return (
@@ -16,12 +17,14 @@ function ContactForm() {
 			<div className="max-w-2xl mx-auto grid gap-6 text-center sm:grid-cols-2">
 				<a
 					href="tel:+380688013941"
+					onClick={() => trackContactClick("phone")}
 					className="flex items-center justify-center gap-2 px-6 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-lg"
 				>
 					<FiPhone size={24} /> Зателефонувати
 				</a>
 				<a
 					href="viber://chat?number=%2B380688013941"
+					onClick={() => trackContactClick("viber")}
 					target="_blank"
 					rel="noopener noreferrer"
 					className="flex items-center justify-center gap-2 px-6 py-4 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-lg"
@@ -30,6 +33,7 @@ function ContactForm() {
 				</a>
 				<a
 					href="https://wa.me/380688013941"
+					onClick={() => trackContactClick("whatsapp")}
 					target="_blank"
 					rel="noopener noreferrer"
 					className="flex items-center justify-center gap-2 px-6 py-4 bg-green-500 hover:bg-green-600 text-white rounded-lg text-lg"
@@ -38,6 +42,7 @@ function ContactForm() {
 				</a>
 				<a
 					href="https://t.me/Konfort_TRANSS"
+					onClick={() => trackContactClick("telegram")}
 					target="_blank"
 					rel="noopener noreferrer"
 					className="flex items-center justify-center gap-2 px-6 py-4 bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg text-lg"

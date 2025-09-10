@@ -6,6 +6,7 @@ import {
 } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 import { SiViber } from "react-icons/si"; // Іконка Viber
+import { trackContactClick } from "../utils/gtag";
 
 function ContactModal({ isOpen, onClose }) {
 	const modalRef = useRef();
@@ -50,12 +51,14 @@ function ContactModal({ isOpen, onClose }) {
 				<div className="grid gap-4 text-center">
 					<a
 						href="tel:+380688013941"
+						onClick={() => trackContactClick("phone")}
 						className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
 					>
 						<FiPhone size={20} /> Зателефонувати
 					</a>
 					<a
 						href="viber://chat?number=+380688013941"
+						onClick={() => trackContactClick("viber")}
 						target="_blank"
 						rel="noopener noreferrer"
 						className="flex items-center justify-center gap-2 px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700"
@@ -64,6 +67,7 @@ function ContactModal({ isOpen, onClose }) {
 					</a>
 					<a
 						href="https://wa.me/380688013941"
+						onClick={() => trackContactClick("whatsapp")}
 						target="_blank"
 						rel="noopener noreferrer"
 						className="flex items-center justify-center gap-2 px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600"
@@ -72,6 +76,7 @@ function ContactModal({ isOpen, onClose }) {
 					</a>
 					<a
 						href="https://t.me/Konfort_TRANSS"
+						onClick={() => trackContactClick("telegram")}
 						target="_blank"
 						rel="noopener noreferrer"
 						className="flex items-center justify-center gap-2 px-6 py-3 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600"
