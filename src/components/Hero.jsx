@@ -13,9 +13,11 @@ function Hero() {
 		>
 			<div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-4">
 				<h1 className="text-4xl md:text-6xl font-bold">
-					Пасажирські перевезення
+					Трансферні перевезення
 				</h1>
-				<p className="text-xl mt-4">Трансферні перевезення Україна - Європа</p>
+				<h2 className="text-xl mt-4">
+					Трансферні перевезення Україна - Європа
+				</h2>
 				<button
 					onClick={() => {
 						trackContactClick("booking_button");
